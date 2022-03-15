@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Cours 1</title>
+    <title>HTML / CSS</title>
 
     <link rel="icon" type="image/png" href="https://icons.duckduckgo.com/ip3/sshort.net.ico">
 
@@ -11,11 +11,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
         integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css"
+        integrity="sha512-hasIneQUHlh06VNBe7f6ZcHmeRTLIaQWFd43YriJ0UND19bvYRauxthDg8E4eVNPm9bRUhr5JGeqH7FRFXQu5g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/base16/darktooth.min.css"
+        integrity="sha512-3FOIFRXBuuAIzEbs8xc5bdMVdD4ORRgnrCM5Bo/ezxIl2+4Hap8J2B+ivX1FLnnoIjUo3bbb7fAyDefTE+YKQQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body class="container mt-3">
-    <h1>HTML - Cours 1</h1>
+<body class="container-xl mt-3">
+    <h1>HTML</h1>
     <hr>
+
+    <div class="row">
+        <div class="col-6">
+            <h5>Paragraph</h5>
+            <p>Text content of web pages</p>
+        </div>
+        <div class="col-6">
+            <pre class="language-html">
+                <code>&lt;h5&gt;Paragraph&lt;/h5&gt;
+&lt;p&gt;Text content of web pages&lt;/p&gt;</code>
+        </pre>
+        </div>
+    </div>
     <div class="card">
         <h2 class="card-header">Exercice 1</h2>
         <div class="card-body">
@@ -91,9 +112,9 @@
                 </tbody>
             </table>
             <h3 class="py-3">Shortcut VSCode</h3>
-                <code>
-                    table>tr*3>td*8
-                </code>
+            <code>
+                table>tr*3>td*8
+            </code>
             <h4 class="py-3">Ex.</h4>
             <table>
                 <tr>
@@ -134,11 +155,21 @@
         </div>
     </div>
     <footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                document.querySelectorAll('pre code').forEach((el) => {
+                    hljs.highlightElement(el);
+                });
+            });
+        </script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"
             referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"
             integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"
+            integrity="sha512-BNc7saQYlxCL10lykUYhFBcnzdKMnjx5fp5s5wPucDyZ7rKNwCoqJh1GwEAIhuePEK4WM9askJBRsu7ma0Rzvg=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </footer>
 </body>
